@@ -22,11 +22,9 @@ public class PrintInRange {
     }
 
     public static void printNumbersInRange(ArrayList<Integer> numbers, int lowerLimit, int upperLimit) {
-        for (int i = 0; i < numbers.size(); i++) {
-            for (int j = lowerLimit; j <= upperLimit; j++) {
-                if (numbers.get(i) == j) {
-                    System.out.println(numbers.get(i));
-                }
+       for (int number : numbers) {
+            if (number >= lowerLimit && number <= upperLimit) {
+                System.out.println(number);
             }
         }
     }
